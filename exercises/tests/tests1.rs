@@ -7,12 +7,16 @@
 // pass! Make the test fail!
 // Execute `rustlings hint tests1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 #[cfg(test)]
 mod tests {
     #[test]
     fn you_can_assert() {
-        assert!();
+        let num: i32 = 2;
+
+        fn is_four(number: i32) -> bool {
+            2 + number == 4
+        }
+
+        assert!(is_four(num), "number is not equals to 2, got {}", num);
     }
 }
